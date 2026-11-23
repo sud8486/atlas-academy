@@ -1,0 +1,38 @@
+[
+ {
+  "id": "uppsc",
+  "title_hi": "UPPSC / उत्तर प्रदेश राज्य PCS",
+  "title_en": "UPPSC / UP State PCS",
+  "category": "State PCS",
+  "series": [
+   "uppsc_ca_test",
+   "uppsc_ca_series",
+   "ramayan_ca",
+   "ca_batch1",
+   "arthiki2026",
+   "samsamayik_arthiki",
+   "uppsc_economy",
+   "ancient_history",
+   "medieval_history",
+   "modern_history",
+   "india_geography",
+   "world_geography",
+   "polity_pyq",
+   "environment",
+   "general_science",
+   "chemistry",
+   "biology",
+   "lakshya_pcs"
+  ]
+ },
+ {
+  "id": "upsc",
+  "title_hi": "UPSC सिविल सेवा (प्रारंभिक स्तर)",
+  "title_en": "UPSC CSE (Prelims level)",
+  "category": "UPSC",
+  "series": [
+   "upsc_ca",
+   "passage_pyq"
+  ]
+ }
+]

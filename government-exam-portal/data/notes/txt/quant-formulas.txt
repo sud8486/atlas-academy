@@ -1,0 +1,485 @@
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+  Quantitative Aptitude Formula Sheet
+  (UPPSC / UPSSSC)
+    Oct 23, 2026 · ​@Sudhanshu
+
+
+
+  1. Calendar
+  Every calendar question reduces to counting odd days (days left over after complete
+  weeks), then moving forward from a known day.
+
+
+     Concept                                       Formula / Value
+
+     Odd days                                      Total days ÷ 7 → remainder
+
+     Ordinary year (365 days)                      1 odd day
+
+     Leap year (366 days)                          2 odd days
+
+     100 years                                     5 odd days
+
+     200 years                                     3 odd days
+
+     300 years                                     1 odd day
+
+     400 years                                     0 odd days
+
+     Leap years in 100 years                       24 (100th year not leap unless divisible by 400)
+
+
+  Leap year test: non-century year divisible by 4; century year divisible by 400 (2000 leap,
+  1900 not leap).
+
+  Odd-day code (0 to 6): 0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday,
+  5 = Friday, 6 = Saturday.
+
+  Month odd days (ordinary year): Jan 3, Feb 0, Mar 3, Apr 2, May 3, Jun 2, Jul 3, Aug 3, Sep
+  2, Oct 3, Nov 2, Dec 3 (Feb = 1 in a leap year).
+
+  Month codes for quick day finding (ordinary year): Jan 0, Feb 3, Mar 3, Apr 6, May 1, Jun
+  4, Jul 6, Aug 2, Sep 5, Oct 0, Nov 3, Dec 5. In a leap year, Jan = 6 and Feb = 2.
+
+  Quick shortcuts
+
+         Same date next year moves forward 1 day (2 days if Feb 29 falls in between).
+
+
+
+
+                                                                                                      Page 1 of 9
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+         Calendar of a year repeats: ordinary year after leap year → +6 years; year after that
+         (2nd after leap) → +11 years; 3rd after leap → +11 years; leap year → +28 years.
+         First and last day of an ordinary year are the same day; in a leap year the last day is one
+         day ahead of the first.
+         A century's last day can only be Monday, Wednesday, Friday or Sunday.
+
+
+  2. Clock
+  The minute hand gains 5.5° per minute over the hour hand; almost every clock question
+  uses this.
+
+
+     Concept                                           Formula / Value
+
+     Minute hand speed                                 6° per minute (360° in 60 min)
+
+     Hour hand speed                                   0.5° per minute (30° per hour)
+
+     Relative speed                                    5.5° per minute, i.e. 55 minute-spaces gained
+                                                       in 60 min
+
+     Angle between hands at H hours M minutes          θ = |30H − 5.5M| (if > 180°, take 360° − θ)
+
+     Time when hands make angle θ between H            M = (30H ± θ) × 2/11 minutes past H
+     and H+1
+
+     Hands coincide between H and H+1                  M = 60H/11 minutes past H
+
+     Hands opposite (180°)                             M = (30H ± 180) × 2/11
+
+     Hands at right angle (90°)                        M = (30H ± 90) × 2/11
+
+     Hands coincide every                              65 5/11 minutes
+
+
+  Counts in a day (24 hours)
+
+         Coincide: 22 times (11 in 12 hours)
+         Opposite (straight line, 180°): 22 times
+         Right angle: 44 times (22 in 12 hours)
+         Straight line (coincide + opposite): 44 times
+
+  Fast / slow clock: if hands meet every T minutes instead of 65 5/11, the clock gains or loses
+  (720/11 − T) × (60 × 24 / T) minutes per day — gains if T < 65 5/11, loses if T > 65 5/11.
+
+
+
+
+                                                                                                     Page 2 of 9
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+  Mirror image time: 11:60 − given time (for times 1:00 to 11:00); for 11:00 to 1:00 use 23:60 −
+  given time.
+
+
+  3. Profit and Loss
+  Profit and loss percentages are always calculated on Cost Price (CP) unless the question
+  says otherwise. SP = Selling Price.
+
+
+     Concept                                            Formula
+
+     Profit                                             SP − CP
+
+     Loss                                               CP − SP
+
+     Profit %                                           (Profit ÷ CP) × 100
+
+     Loss %                                             (Loss ÷ CP) × 100
+
+     SP when profit P%                                  CP × (100 + P) ÷ 100
+
+     SP when loss L%                                    CP × (100 − L) ÷ 100
+
+     CP from SP (profit P%)                             SP × 100 ÷ (100 + P)
+
+     CP from SP (loss L%)                               SP × 100 ÷ (100 − L)
+
+     Two items sold at same SP, one at x% gain          Always a loss of x²/100 %
+     and other at x% loss
+
+     Successive profits a% and b%                       Net % = a + b + ab/100 (use −b for a loss)
+
+     False weight (dishonest dealer selling at CP)      Gain % = (True wt − False wt) ÷ False wt ×
+                                                        100
+
+     False weight + profit/loss on price                (100 + gain%) ÷ (100 − loss%) = True wt ÷
+                                                        False wt
+
+     CP of x items = SP of y items                      Profit % = (x − y) ÷ y × 100 (loss if y > x)
+
+     Buy x get y free                                   Discount % = y ÷ (x + y) × 100
+
+
+  Shortcuts
+
+         If selling at ₹A gives the same % profit as selling at ₹B gives % loss: CP = (A + B) ÷ 2.
+         If profit at SP₁ is P₁ and at SP₂ is P₂ (same item): CP = (SP₁ − SP₂) × 100 ÷ (P₁ − P₂).
+
+
+
+
+                                                                                                       Page 3 of 9
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+         Fraction shortcut: 20% profit = 1/5 → CP : SP = 5 : 6; 25% loss = 1/4 → CP : SP = 4 : 3.
+
+
+  4. Simple Interest
+  Simple interest (SI) is charged only on the original principal, so it is the same every year. P
+  = Principal, R = rate % per annum, T = time in years, A = Amount.
+
+
+     Concept                                             Formula
+
+     Simple Interest                                     SI = (P × R × T) ÷ 100
+
+     Amount                                              A = P + SI = P × (100 + RT) ÷ 100
+
+     Principal                                           P = (SI × 100) ÷ (R × T)
+
+     Rate                                                R = (SI × 100) ÷ (P × T)
+
+     Time                                                T = (SI × 100) ÷ (P × R)
+
+     Sum becomes n times in T years                      R = (n − 1) × 100 ÷ T
+
+     Sum becomes n times at R%                           T = (n − 1) × 100 ÷ R
+
+     Sum becomes n₁ times in T₁ years; to become         T₂ = (n₂ − 1) ÷ (n₁ − 1) × T₁
+     n₂ times
+
+     Amount A₁ after T₁ years and A₂ after T₂            SI per year = (A₂ − A₁) ÷ (T₂ − T₁); P = A₁ − T₁ ×
+     years                                               (SI per year)
+
+     Equal annual instalment x to repay debt A in        A = x·T + (x·R ÷ 100) × [T(T − 1) ÷ 2]
+     T years
+
+
+  Shortcuts
+
+         Time in months → divide by 12; days → divide by 365.
+         Sum doubles (n = 2): R × T = 100. Triples: R × T = 200.
+         SI for each year is equal, so SI for 1 year = Total SI ÷ T.
+
+
+  5. Compound Interest
+  Compound interest (CI) adds each year's interest to the principal, so interest grows every
+  year: A = P(1 + R/100)ᵀ and CI = A − P.
+
+
+
+
+                                                                                                       Page 4 of 9
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+     Concept                                                         Formula
+
+     Amount (annual)                                                 A = P × (1 + R/100)ᵀ
+
+     Compound Interest                                               CI = P × [(1 + R/100)ᵀ − 1]
+
+     Half-yearly compounding                                         A = P × (1 + R/200)²ᵀ
+
+     Quarterly compounding                                           A = P × (1 + R/400)⁴ᵀ
+
+     Different rates each year R₁, R₂, R₃                            A = P × (1 + R₁/100)(1 + R₂/100)(1 +
+                                                                     R₃/100)
+
+     Fractional time, e.g. 2⅓ years                                  A = P × (1 + R/100)² × (1 + (R/3)/100)
+
+     CI − SI for 2 years                                             D = P × (R/100)²
+
+     CI − SI for 3 years                                             D = P × (R/100)² × (3 + R/100)
+
+     CI for 2 years at R% (net %)                                    2R + R²/100
+
+     Sum becomes n times in T years; becomes nᵏ                      k × T years
+     times in
+
+     Amount A₁ after T years, A₂ after (T + 1) years                 R = (A₂ − A₁) ÷ A₁ × 100
+
+     Depreciation (value falls R% yearly)                            Value after T years = P × (1 − R/100)ᵀ
+
+     Population growth                                               Population after T years = P × (1 +
+                                                                     R/100)ᵀ
+
+     Equal annual instalment x (2 years)                             P = x ÷ (1 + R/100) + x ÷ (1 + R/100)²
+
+
+  Ready values (2 years)
+
+
+     Rate        CI % for 2 years               CI − SI (per ₹100)
+
+     5%          10.25%                         ₹0.25
+
+     10%         21%                            ₹1
+
+     15%         32.25%                         ₹2.25
+
+     20%         44%                            ₹4
+
+
+  Shortcut: at 10% for 3 years, CI = 33.1% of P; at 20% for 3 years, CI = 72.8% of P.
+
+
+
+
+                                                                                                              Page 5 of 9
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+  6. Average
+  Average = Sum of observations ÷ Number of observations; most questions turn on how
+  the sum changes.
+
+
+     Concept                                              Formula
+
+     Average                                              Sum ÷ n
+
+     Sum                                                  Average × n
+
+     First n natural numbers                              (n + 1) ÷ 2
+
+     First n even numbers                                 n+1
+
+     First n odd numbers                                  n
+
+     Squares of first n natural numbers                   (n + 1)(2n + 1) ÷ 6
+
+     Cubes of first n natural numbers                     n(n + 1)² ÷ 4
+
+     Consecutive numbers / any arithmetic series          (First term + Last term) ÷ 2
+
+     Combined average of two groups                       (n₁A₁ + n₂A₂) ÷ (n₁ + n₂)
+
+     Average speed, equal distances at x and y            2xy ÷ (x + y)
+
+     Average speed, equal distances at x, y, z            3xyz ÷ (xy + yz + zx)
+
+     New person replaces one; average changes by d        New value = Old value ± n × d
+
+     New person joins (n becomes n + 1); average          New value = Old average ± (n + 1) × d
+     changes by d
+
+     Person leaves (n becomes n − 1); average             Value of leaver = Old average ∓ (n − 1) ×
+     changes by d                                         d
+
+
+  Shortcuts
+
+         Adding (or multiplying) every value by k adds (or multiplies) the average by k.
+         Cricket: new average after an innings of x runs rising by d → old average = x − (n + 1)d,
+         where n = innings before.
+         Overlapping groups (e.g. first 6 and last 6 of 11 results): shared middle value = (sum of
+         first part + sum of last part) − total sum.
+
+
+
+
+                                                                                                  Page 6 of 9
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+  7. Age
+  The difference between two people's ages never changes; ratio questions are solved by
+  keeping that difference fixed.
+
+
+     Concept                                           Formula
+
+     Present age x                                     n years ago = x − n; after n years = x + n
+
+     Age is n times another person's                   Elder = n × Younger
+
+     Present ratio a : b, after n years ratio c : d    Ages = a·k and b·k, where k = n(c − d) ÷ (ad − bc)
+
+     Present ratio a : b, n years ago ratio c : d      k = n(d − c) ÷ (ad − bc), ages = a·k and b·k
+
+     Sum of ages S, ratio a : b                        Ages = S·a ÷ (a + b) and S·b ÷ (a + b)
+
+     Average age of n people, after t years            New average = Old average + t
+
+     Sum of ages of n people after t years             Old sum + n·t
+
+     Person born when other was y years old            Difference in ages = y (always)
+
+
+  Shortcuts
+
+         Ratio method: make the ratio difference equal in both ratios (e.g. 3 : 5 and 5 : 7 →
+         difference 2 in both), then 1 ratio part = years passed ÷ change in ratio term.
+         Example: ratio 3 : 5 now, 5 : 7 after 6 years → each part moves by 2 for 6 years → 1 part =
+         3 years → ages 9 and 15.
+         Back-solve from options: in UPSSSC MCQs, testing each option against the ratio is
+         often fastest.
+
+
+  8. Pipe and Cistern
+  A pipe that fills a tank in x hours does 1/x of the tank per hour; inlet work is positive,
+  outlet (leak) work is negative.
+
+
+     Concept                                              Formula
+
+     Inlet fills in x hours                               Work per hour = +1/x
+
+     Outlet empties in y hours                            Work per hour = −1/y
+
+
+
+
+                                                                                                      Page 7 of 9
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+     Concept                                           Formula
+
+     Two inlets A (x hrs) and B (y hrs) together       Time = xy ÷ (x + y)
+
+     Inlet x hrs, outlet y hrs (y > x), together       Time to fill = xy ÷ (y − x)
+
+     Three pipes x, y, z (all inlets)                  Time = xyz ÷ (xy + yz + zx)
+
+     Pipe fills in x hrs but takes t hrs more due      Leak empties full tank in x(x + t) ÷ t hours
+     to leak
+
+     A and B together in T hrs; A alone in x hrs       B alone = xT ÷ (x − T)
+
+     A + B in x hrs, B + C in y hrs, A + C in z hrs    A + B + C = 2xyz ÷ (xy + yz + zx)
+
+     Pipes opened alternately (A, B, A, B…)            Find work in one 2-hour cycle, then cycles
+                                                       needed + remainder
+
+
+  LCM method (fastest in exams)
+
+     1. Take tank capacity = LCM of all the given times.
+     2. Efficiency of each pipe = Capacity ÷ its time (negative for an outlet).
+     3. Time = Capacity ÷ (sum of efficiencies of pipes that are open).
+
+  Example: A fills in 12 hrs, B in 15 hrs, C empties in 20 hrs → capacity 60, efficiencies 5 + 4 −
+  3 = 6 → tank full in 10 hours.
+
+
+  9. Discount
+  Discount is always calculated on the Marked Price (MP), while profit is calculated on Cost
+  Price (CP).
+
+
+     Concept                                             Formula
+
+     Discount                                            MP − SP
+
+     Discount %                                          (Discount ÷ MP) × 100
+
+     SP after discount D%                                MP × (100 − D) ÷ 100
+
+     MP from SP                                          SP × 100 ÷ (100 − D)
+
+     Successive discounts a% and b%                      Single equivalent = a + b − ab/100
+
+     Three successive discounts a%, b%, c%               SP = MP × (1 − a/100)(1 − b/100)(1 − c/100)
+
+
+
+                                                                                                      Page 8 of 9
+Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)
+
+
+
+
+     Concept                                              Formula
+
+     Relation of MP, CP with profit P% and                MP ÷ CP = (100 + P) ÷ (100 − D)
+     discount D%
+
+     Marked up by M% then discount D%                     Net profit % = M − D − MD/100
+
+     Buy x get y free                                     Effective discount % = y ÷ (x + y) × 100
+
+     Trader gains P% after D% discount                    MP must be (P + D) ÷ (100 − D) × 100 %
+                                                          above CP
+
+
+  Ready values (successive discounts)
+
+
+     Discounts               Equivalent single discount
+
+     10% + 10%               19%
+
+     20% + 10%               28%
+
+     20% + 20%               36%
+
+     25% + 20%               40%
+
+     30% + 20%               44%
+
+
+  Shortcut: the order of successive discounts does not change the final price.
+
+
+
+
+                                                                                                     Page 9 of 9
+

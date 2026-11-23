@@ -1,0 +1,9 @@
+# Windows / editor clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+
+# archives and temporary transfer files
+*.zip
+*.tmp

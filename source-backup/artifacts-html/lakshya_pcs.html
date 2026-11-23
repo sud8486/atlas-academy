@@ -1,0 +1,437 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>लक्ष्य PCS टेस्ट सीरीज़</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martel:wght@700;800&family=Mukta:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: an OMR answer-sheet — pale ruled paper, ink-blue bubbles, red-pen marking on results */
+:root{
+  --paper:#eef2f6; --sheet:#ffffff; --ink:#1b2a4a; --muted:#5b6a86; --rule:#d5dde8;
+  --accent:#1f4fd1; --accent-soft:#e3eafc; --ok:#167a4a; --ok-soft:#e1f3e9; --bad:#c8322b; --bad-soft:#fbe5e3; --flag:#b26a00; --flag-soft:#fdf0d9;
+  --display:"Martel","Noto Serif Devanagari",Georgia,serif;
+  --body:"Mukta","Noto Sans Devanagari",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0f1521; --sheet:#172033; --ink:#e6ebf5; --muted:#97a3bb; --rule:#2a3650;
+  --accent:#7aa2ff; --accent-soft:#1e2c4d; --ok:#4fd08f; --ok-soft:#163327; --bad:#ff7a70; --bad-soft:#3a1d1d; --flag:#f2b453; --flag-soft:#3a2c14; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1521; --sheet:#172033; --ink:#e6ebf5; --muted:#97a3bb; --rule:#2a3650;
+  --accent:#7aa2ff; --accent-soft:#1e2c4d; --ok:#4fd08f; --ok-soft:#163327; --bad:#ff7a70; --bad-soft:#3a1d1d; --flag:#f2b453; --flag-soft:#3a2c14; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.3}
+h1{font-size:1.75rem} h2{font-size:1.3rem} h3{font-size:1.05rem}
+p{margin:0}
+.muted{color:var(--muted)}
+.label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);padding:10px 16px;font-weight:600}
+button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.ghost{background:transparent}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.lang{display:flex;border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.lang button{border:0;border-radius:0;padding:6px 12px;background:var(--sheet);font-weight:600}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--sheet)}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:18px}
+.tests{display:grid;gap:12px}
+.test{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+.test .meta{display:flex;gap:14px;flex-wrap:wrap;font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.badge{font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.rules{display:grid;gap:6px;padding-left:18px;margin:0}
+.namebox{display:grid;gap:8px}
+input[type=text]{font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);width:100%}
+/* test view */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:8px;display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid var(--rule)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.timer{font-family:var(--mono);font-weight:700;font-size:1.25rem;font-variant-numeric:tabular-nums;padding:4px 10px;border-radius:8px;background:var(--sheet);border:1px solid var(--rule)}
+.timer.low{color:var(--bad);border-color:var(--bad)}
+.qno{font-family:var(--mono);color:var(--muted);font-size:.85rem}
+.qtext{font-size:1.1rem;font-weight:500}
+.opts{display:grid;gap:10px;margin-top:14px}
+.opt{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center;text-align:left;font-weight:500;padding:12px;border-radius:12px}
+.bub{width:30px;height:30px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font-family:var(--mono);font-size:.85rem;font-weight:700}
+.opt[aria-checked="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt[aria-checked="true"] .bub{background:var(--ink);color:var(--sheet)}
+.nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:8px}
+.pal{padding:0;height:40px;font-family:var(--mono);font-weight:700}
+.pal.ans{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.pal.flag{background:var(--flag-soft);border-color:var(--flag);color:var(--flag)}
+.pal.cur{outline:2px solid var(--accent);outline-offset:1px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.85rem;color:var(--muted)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:middle;border:1px solid var(--rule)}
+.confirm{border:2px solid var(--accent)}
+/* result */
+.score{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.big{font-family:var(--mono);font-size:2.6rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+.stat{border-top:3px solid var(--rule);padding-top:6px}
+.stat b{display:block;font-family:var(--mono);font-size:1.2rem;font-variant-numeric:tabular-nums}
+.stat.ok{border-color:var(--ok)} .stat.bad{border-color:var(--bad)}
+@media (max-width:480px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sol{display:grid;gap:8px;padding-block:14px;border-top:1px dashed var(--rule)}
+.sol:first-child{border-top:0}
+.sopt{padding:6px 10px;border-radius:8px;font-size:.95rem}
+.sopt.right{background:var(--ok-soft);color:var(--ok);font-weight:600}
+.sopt.wrong{background:var(--bad-soft);color:var(--bad);text-decoration:line-through}
+.why{font-size:.92rem;color:var(--muted);border-left:3px solid var(--accent);padding-left:10px}
+.tag{font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:6px}
+.tag.ok{background:var(--ok-soft);color:var(--ok)} .tag.bad{background:var(--bad-soft);color:var(--bad)} .tag.skip{background:var(--paper);color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--rule)}
+th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono)}
+tr.me td{background:var(--accent-soft);font-weight:700}
+.tablewrap{overflow-x:auto}
+.note{font-size:.9rem;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.opt,.pal{transition:background .15s,border-color .15s}}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <div>
+    <p class="label" id="t-brand">UPPSC · राज्य PCS प्रारंभिक परीक्षा</p>
+    <h1 id="t-title">लक्ष्य PCS टेस्ट सीरीज़</h1>
+  </div>
+  <div class="lang" role="group" aria-label="Language">
+    <button id="lang-hi" aria-pressed="true">हिंदी</button>
+    <button id="lang-en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="v-home" class="wrap" style="gap:18px">
+  <div class="sheet namebox">
+    <label class="label" for="name" id="t-namelbl">आपका नाम (रैंक लिस्ट में दिखेगा)</label>
+    <input type="text" id="name" maxlength="30" autocomplete="name" placeholder="जैसे: राहुल वर्मा">
+  </div>
+  <div class="tests" id="tests"></div>
+  <div class="sheet">
+    <h3 id="t-rulesh">परीक्षा नियम</h3>
+    <ul class="rules" id="rules"></ul>
+  </div>
+</section>
+
+<!-- TEST -->
+<section id="v-test" hidden>
+  <div class="wrap">
+    <div class="bar">
+      <div><p class="label" id="test-name"></p><p class="qno" id="qpos"></p></div>
+      <div class="timer" id="timer" aria-live="off">10:00</div>
+    </div>
+    <article class="sheet">
+      <p class="qtext" id="qtext"></p>
+      <div class="opts" id="opts" role="radiogroup"></div>
+    </article>
+    <div class="nav">
+      <div class="row">
+        <button id="prev" class="ghost"></button>
+        <button id="flag" class="ghost"></button>
+        <button id="clear" class="ghost"></button>
+      </div>
+      <button id="next" class="primary"></button>
+    </div>
+    <div class="sheet" style="display:grid;gap:12px">
+      <div class="palette" id="palette"></div>
+      <div class="legend" id="legend"></div>
+      <button id="submit"></button>
+    </div>
+    <div class="sheet confirm" id="confirm" hidden>
+      <p id="confirm-text" style="font-weight:600"></p>
+      <div class="row" style="margin-top:12px">
+        <button id="confirm-yes" class="primary"></button>
+        <button id="confirm-no"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULT -->
+<section id="v-result" hidden>
+  <div class="wrap">
+    <div class="sheet">
+      <p class="label" id="r-name"></p>
+      <div class="score"><span class="big" id="r-score"></span><span class="muted" id="r-out"></span></div>
+      <div class="stats" id="r-stats"></div>
+    </div>
+    <div class="sheet">
+      <div class="top"><h2 id="lb-h"></h2><span class="note" id="lb-note"></span></div>
+      <div class="tablewrap"><table id="lb"></table></div>
+    </div>
+    <div class="sheet">
+      <h2 id="sol-h" style="margin-bottom:6px"></h2>
+      <div id="sols"></div>
+    </div>
+    <div class="row"><button id="home" class="primary"></button><button id="retry"></button></div>
+  </div>
+</section>
+
+</div>
+
+<script>
+const TESTS = [
+ { id:"up1", min:10, tag:{hi:"UP विशेष",en:"UP Special"},
+   title:{hi:"उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",en:"Uttar Pradesh GK — Mock 1"},
+   qs:[
+    {hi:"उत्तर प्रदेश का राजकीय पक्षी कौन-सा है?",en:"What is the state bird of Uttar Pradesh?",
+     o:{hi:["मोर","सारस","कोयल","हरियल"],en:["Peacock","Sarus crane","Koel","Green pigeon"]},a:1,
+     x:{hi:"सारस (Sarus Crane) उत्तर प्रदेश का राजकीय पक्षी है।",en:"The Sarus crane is UP's state bird."}},
+    {hi:"उत्तर प्रदेश का राजकीय पशु कौन-सा है?",en:"What is the state animal of Uttar Pradesh?",
+     o:{hi:["बाघ","हाथी","बारहसिंगा","नीलगाय"],en:["Tiger","Elephant","Swamp deer (Barasingha)","Nilgai"]},a:2,
+     x:{hi:"बारहसिंगा (Swamp Deer) राज्य का राजकीय पशु है।",en:"The Barasingha (swamp deer) is the state animal."}},
+    {hi:"जनगणना 2011 के अनुसार उत्तर प्रदेश का सर्वाधिक जनसंख्या वाला जिला कौन-सा है?",en:"As per Census 2011, which is the most populous district of UP?",
+     o:{hi:["लखनऊ","कानपुर नगर","गाज़ियाबाद","प्रयागराज"],en:["Lucknow","Kanpur Nagar","Ghaziabad","Prayagraj"]},a:3,
+     x:{hi:"प्रयागराज (तत्कालीन इलाहाबाद) की जनसंख्या लगभग 59.5 लाख थी।",en:"Prayagraj (then Allahabad) had about 5.95 million people."}},
+    {hi:"दुधवा राष्ट्रीय उद्यान किस जिले में स्थित है?",en:"Dudhwa National Park is located in which district?",
+     o:{hi:["बहराइच","लखीमपुर खीरी","पीलीभीत","सोनभद्र"],en:["Bahraich","Lakhimpur Kheri","Pilibhit","Sonbhadra"]},a:1,
+     x:{hi:"दुधवा लखीमपुर खीरी जिले में भारत-नेपाल सीमा के पास है।",en:"Dudhwa lies in Lakhimpur Kheri near the Nepal border."}},
+    {hi:"उत्तर प्रदेश स्थापना दिवस किस तिथि को मनाया जाता है?",en:"On which date is Uttar Pradesh Diwas (foundation day) observed?",
+     o:{hi:["24 जनवरी","1 नवंबर","26 जनवरी","15 अगस्त"],en:["24 January","1 November","26 January","15 August"]},a:0,
+     x:{hi:"24 जनवरी 1950 को 'संयुक्त प्रांत' का नाम 'उत्तर प्रदेश' हुआ।",en:"On 24 Jan 1950 the United Provinces was renamed Uttar Pradesh."}},
+    {hi:"उत्तर प्रदेश विधान परिषद में कुल कितने सदस्य हैं?",en:"How many members does the UP Legislative Council have?",
+     o:{hi:["80","100","108","403"],en:["80","100","108","403"]},a:1,
+     x:{hi:"विधान परिषद में 100 सदस्य हैं; विधानसभा में 403।",en:"The Council has 100 members; the Assembly has 403."}},
+    {hi:"रिहंद बांध (गोविंद बल्लभ पंत सागर) किस नदी पर बना है?",en:"The Rihand Dam (Govind Ballabh Pant Sagar) is built on which river?",
+     o:{hi:["बेतवा","केन","रिहंद","सोन"],en:["Betwa","Ken","Rihand","Son"]},a:2,
+     x:{hi:"सोनभद्र जिले में रिहंद नदी पर; इसका जलाशय गोविंद बल्लभ पंत सागर है।",en:"On the Rihand river in Sonbhadra; its reservoir is GB Pant Sagar."}},
+    {hi:"चौरी-चौरा कांड किस वर्ष हुआ था?",en:"In which year did the Chauri Chaura incident occur?",
+     o:{hi:["1919","1920","1922","1925"],en:["1919","1920","1922","1925"]},a:2,
+     x:{hi:"4 फरवरी 1922, गोरखपुर; इसके बाद गांधीजी ने असहयोग आंदोलन वापस लिया।",en:"4 Feb 1922 in Gorakhpur; Gandhi then withdrew the Non-Cooperation Movement."}},
+    {hi:"काकोरी ट्रेन एक्शन किस वर्ष हुआ था?",en:"In which year did the Kakori train action take place?",
+     o:{hi:["1922","1925","1928","1931"],en:["1922","1925","1928","1931"]},a:1,
+     x:{hi:"9 अगस्त 1925 को HRA के क्रांतिकारियों ने लखनऊ के पास काकोरी में यह कार्रवाई की।",en:"On 9 Aug 1925, HRA revolutionaries acted at Kakori near Lucknow."}},
+    {hi:"उत्तर प्रदेश से लोकसभा की कितनी सीटें हैं?",en:"How many Lok Sabha seats does Uttar Pradesh have?",
+     o:{hi:["31","48","80","85"],en:["31","48","80","85"]},a:2,
+     x:{hi:"उत्तर प्रदेश से लोकसभा की 80 और राज्यसभा की 31 सीटें हैं।",en:"UP has 80 Lok Sabha and 31 Rajya Sabha seats."}}
+   ]},
+ { id:"gs1", min:10, tag:{hi:"सामान्य अध्ययन",en:"General Studies"},
+   title:{hi:"सामान्य अध्ययन — मॉक 1",en:"General Studies — Mock 1"},
+   qs:[
+    {hi:"भारतीय संविधान का कौन-सा अनुच्छेद अस्पृश्यता का अंत करता है?",en:"Which Article of the Constitution abolishes untouchability?",
+     o:{hi:["अनुच्छेद 14","अनुच्छेद 15","अनुच्छेद 17","अनुच्छेद 21"],en:["Article 14","Article 15","Article 17","Article 21"]},a:2,
+     x:{hi:"अनुच्छेद 17 अस्पृश्यता का अंत करता है और इसका आचरण निषिद्ध करता है।",en:"Article 17 abolishes untouchability and forbids its practice."}},
+    {hi:"राज्य के राज्यपाल की नियुक्ति कौन करता है?",en:"Who appoints the Governor of a state?",
+     o:{hi:["मुख्यमंत्री","प्रधानमंत्री","राष्ट्रपति","मुख्य न्यायाधीश"],en:["Chief Minister","Prime Minister","President","Chief Justice"]},a:2,
+     x:{hi:"अनुच्छेद 155 के तहत राष्ट्रपति राज्यपाल की नियुक्ति करते हैं।",en:"Under Article 155, the President appoints the Governor."}},
+    {hi:"प्रथम बौद्ध संगीति कहाँ आयोजित हुई थी?",en:"Where was the First Buddhist Council held?",
+     o:{hi:["वैशाली","राजगृह","पाटलिपुत्र","कश्मीर"],en:["Vaishali","Rajagriha","Pataliputra","Kashmir"]},a:1,
+     x:{hi:"बुद्ध के निर्वाण के बाद अजातशत्रु के काल में राजगृह में।",en:"At Rajagriha, under Ajatashatru, soon after the Buddha's death."}},
+    {hi:"कर्क रेखा भारत के कितने राज्यों से होकर गुजरती है?",en:"The Tropic of Cancer passes through how many Indian states?",
+     o:{hi:["6","7","8","9"],en:["6","7","8","9"]},a:2,
+     x:{hi:"गुजरात, राजस्थान, मध्य प्रदेश, छत्तीसगढ़, झारखंड, पश्चिम बंगाल, त्रिपुरा, मिज़ोरम।",en:"Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram."}},
+    {hi:"'वेदों की ओर लौटो' का नारा किसने दिया?",en:"Who gave the slogan 'Go back to the Vedas'?",
+     o:{hi:["राजा राममोहन राय","स्वामी विवेकानंद","स्वामी दयानंद सरस्वती","ईश्वरचंद्र विद्यासागर"],en:["Raja Ram Mohan Roy","Swami Vivekananda","Swami Dayanand Saraswati","Ishwar Chandra Vidyasagar"]},a:2,
+     x:{hi:"आर्य समाज (1875) के संस्थापक स्वामी दयानंद सरस्वती ने।",en:"Swami Dayanand Saraswati, founder of the Arya Samaj (1875)."}},
+    {hi:"मौलिक कर्तव्य किस संविधान संशोधन द्वारा जोड़े गए?",en:"Fundamental Duties were added by which amendment?",
+     o:{hi:["42वाँ","44वाँ","52वाँ","73वाँ"],en:["42nd","44th","52nd","73rd"]},a:0,
+     x:{hi:"42वें संशोधन (1976) से भाग IV-A, अनुच्छेद 51A जोड़ा गया।",en:"The 42nd Amendment (1976) added Part IV-A, Article 51A."}},
+    {hi:"भारतीय रिज़र्व बैंक की स्थापना किस वर्ष हुई?",en:"In which year was the Reserve Bank of India established?",
+     o:{hi:["1921","1935","1947","1949"],en:["1921","1935","1947","1949"]},a:1,
+     x:{hi:"1 अप्रैल 1935; 1949 में इसका राष्ट्रीयकरण हुआ।",en:"1 April 1935; it was nationalised in 1949."}},
+    {hi:"विटामिन C की कमी से कौन-सा रोग होता है?",en:"Deficiency of Vitamin C causes which disease?",
+     o:{hi:["रिकेट्स","स्कर्वी","बेरी-बेरी","रतौंधी"],en:["Rickets","Scurvy","Beriberi","Night blindness"]},a:1,
+     x:{hi:"स्कर्वी — मसूड़ों से खून आना इसका प्रमुख लक्षण है।",en:"Scurvy — bleeding gums is a key symptom."}},
+    {hi:"पंचायती राज को संवैधानिक दर्जा किस संशोधन से मिला?",en:"Which amendment gave constitutional status to Panchayati Raj?",
+     o:{hi:["61वाँ","73वाँ","74वाँ","86वाँ"],en:["61st","73rd","74th","86th"]},a:1,
+     x:{hi:"73वाँ संशोधन (1992), भाग IX; 74वाँ नगरपालिकाओं के लिए है।",en:"73rd Amendment (1992), Part IX; the 74th covers municipalities."}},
+    {hi:"भारत के भीतर सबसे लंबी नदी कौन-सी है?",en:"Which is the longest river within India?",
+     o:{hi:["गोदावरी","ब्रह्मपुत्र","सिंधु","गंगा"],en:["Godavari","Brahmaputra","Indus","Ganga"]},a:3,
+     x:{hi:"गंगा; प्रायद्वीपीय भारत में सबसे लंबी गोदावरी है।",en:"The Ganga; the Godavari is the longest in peninsular India."}}
+   ]}
+];
+const MARK = 2, NEG = 2/3; // +2 सही, −⅓ प्रश्न के अंक गलत पर
+
+const T = {
+ hi:{brand:"UPPSC · राज्य PCS प्रारंभिक परीक्षा",title:"लक्ष्य PCS टेस्ट सीरीज़",namelbl:"आपका नाम (रैंक लिस्ट में दिखेगा)",nameph:"जैसे: राहुल वर्मा",
+   q:"प्रश्न",min:"मिनट",marks:"अंक",start:"टेस्ट शुरू करें",best:"आपका सर्वश्रेष्ठ",rulesh:"परीक्षा नियम",
+   rules:[`हर सही उत्तर पर +${MARK} अंक।`,`हर गलत उत्तर पर उस प्रश्न के अंकों का ⅓ (−${(MARK/3).toFixed(2)}) कटेगा, जैसा UPPSC में होता है।`,"छोड़े गए प्रश्न पर कोई कटौती नहीं।","समय खत्म होते ही टेस्ट अपने आप जमा हो जाएगा।"],
+   prev:"← पिछला",next:"अगला →",flag:"समीक्षा हेतु चिह्नित",unflag:"चिह्न हटाएँ",clear:"उत्तर हटाएँ",submit:"टेस्ट जमा करें",
+   lg:["उत्तर दिया","समीक्षा","शेष"],of:"में से",
+   confirm:(a,n)=>`आपने ${n} में से ${a} प्रश्नों के उत्तर दिए हैं। क्या टेस्ट जमा करें?`,yes:"हाँ, जमा करें",no:"वापस जाएँ",
+   score:"अंक",outof:m=>`/ ${m} अंक`,correct:"सही",wrong:"गलत",skip:"छोड़े",acc:"सटीकता",time:"समय",
+   lb:"रैंक लिस्ट",lbme:"आप",lbempty:"अभी कोई प्रविष्टि नहीं। पहले स्थान पर आप हो सकते हैं।",lboff:"रैंक लिस्ट के लिए Claude में साइन इन करें। आपका स्कोर इस फ़ोन पर दिख रहा है।",lbload:"रैंक लिस्ट लोड हो रही है…",lbslow:"रैंक लिस्ट अभी नहीं मिल रही, थोड़ी देर बाद देखें।",
+   rank:"रैंक",nm:"नाम",sc:"अंक",tm:"समय",sol:"हल और व्याख्या",home:"सभी टेस्ट",retry:"दोबारा दें",
+   student:"छात्र",nameneed:"शुरू करने से पहले अपना नाम लिखें।",your:"आपका उत्तर",ans:"सही उत्तर",
+   tagok:"सही",tagbad:"गलत",tagskip:"छोड़ा"},
+ en:{brand:"UPPSC · State PCS Prelims",title:"Lakshya PCS Test Series",namelbl:"Your name (shown on the rank list)",nameph:"e.g. Rahul Verma",
+   q:"Questions",min:"min",marks:"marks",start:"Start test",best:"Your best",rulesh:"Exam rules",
+   rules:[`+${MARK} marks for each correct answer.`,`Each wrong answer deducts ⅓ of the question's marks (−${(MARK/3).toFixed(2)}), as in UPPSC.`,"No deduction for unanswered questions.","The test submits automatically when time runs out."],
+   prev:"← Previous",next:"Next →",flag:"Mark for review",unflag:"Unmark",clear:"Clear answer",submit:"Submit test",
+   lg:["Answered","Review","Not answered"],of:"of",
+   confirm:(a,n)=>`You have answered ${a} of ${n} questions. Submit the test?`,yes:"Yes, submit",no:"Go back",
+   score:"Score",outof:m=>`/ ${m} marks`,correct:"Correct",wrong:"Wrong",skip:"Skipped",acc:"Accuracy",time:"Time",
+   lb:"Rank list",lbme:"You",lbempty:"No entries yet. You could be first.",lboff:"Sign in to Claude to join the rank list. Your score is shown on this device.",lbload:"Loading rank list…",lbslow:"Can't reach the rank list right now. Try again shortly.",
+   rank:"Rank",nm:"Name",sc:"Score",tm:"Time",sol:"Solutions",home:"All tests",retry:"Retake",
+   student:"Student",nameneed:"Enter your name before starting.",your:"Your answer",ans:"Correct answer",
+   tagok:"Correct",tagbad:"Wrong",tagskip:"Skipped"}
+};
+
+const $ = id => document.getElementById(id);
+const store = { get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}}, set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}} };
+let L = store.get("lang","hi");
+let S = null; // running test state
+let tick = null;
+let db = null, uid = null, board = [], boardState = "load", unsub = null, slowTimer = null;
+const local = store.get("best",{});
+
+function fmt(s){s=Math.max(0,Math.round(s));return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+function show(v){["home","test","result"].forEach(n=>$("v-"+n).hidden=n!==v);window.scrollTo(0,0)}
+function txt(id,s){$(id).textContent=s}
+
+function setLang(l){
+  L=l;store.set("lang",l);document.documentElement.lang=l;
+  $("lang-hi").setAttribute("aria-pressed",l==="hi");$("lang-en").setAttribute("aria-pressed",l==="en");
+  txt("t-brand",T[l].brand);txt("t-title",T[l].title);txt("t-namelbl",T[l].namelbl);$("name").placeholder=T[l].nameph;txt("t-rulesh",T[l].rulesh);
+  renderHome(); if(S&&!S.done) renderQ(); if(S&&S.done) renderResult();
+}
+
+function renderHome(){
+  const t=T[L];
+  $("rules").replaceChildren(...t.rules.map(r=>{const li=document.createElement("li");li.textContent=r;return li}));
+  $("tests").replaceChildren(...TESTS.map(ts=>{
+    const c=document.createElement("div");c.className="sheet test";
+    const b=local[ts.id];
+    c.innerHTML=`<div style="display:grid;gap:6px;min-width:0"><span><span class="badge"></span></span><h2></h2><div class="meta"><span>${ts.qs.length} ${t.q}</span><span>${ts.min} ${t.min}</span><span>${ts.qs.length*MARK} ${t.marks}</span>${b?`<span>${t.best}: <b>${b.score.toFixed(2)}</b></span>`:""}</div></div>`;
+    c.querySelector(".badge").textContent=ts.tag[L];c.querySelector("h2").textContent=ts.title[L];
+    const btn=document.createElement("button");btn.className="primary";btn.textContent=t.start;btn.onclick=()=>start(ts);
+    c.append(btn);return c;
+  }));
+}
+
+function start(ts){
+  const nm=$("name").value.trim();
+  if(!nm){$("name").focus();$("name").placeholder=T[L].nameneed;return}
+  store.set("name",nm);
+  S={ts,i:0,ans:Array(ts.qs.length).fill(null),flag:Array(ts.qs.length).fill(false),left:ts.min*60,startAt:Date.now(),done:false};
+  clearInterval(tick);tick=setInterval(()=>{S.left=ts.min*60-(Date.now()-S.startAt)/1000;renderTimer();if(S.left<=0)finish()},1000);
+  show("test");renderQ();
+}
+function renderTimer(){const el=$("timer");el.textContent=fmt(S.left);el.classList.toggle("low",S.left<=60)}
+function renderQ(){
+  const t=T[L],q=S.ts.qs[S.i];
+  txt("test-name",S.ts.title[L]);txt("qpos",`${t.q.replace(/s$/,"")} ${S.i+1} ${t.of} ${S.ts.qs.length}`);renderTimer();
+  txt("qtext",`${S.i+1}. ${q[L]}`);
+  $("opts").replaceChildren(...q.o[L].map((o,k)=>{
+    const b=document.createElement("button");b.className="opt";b.setAttribute("role","radio");b.setAttribute("aria-checked",S.ans[S.i]===k);
+    b.innerHTML=`<span class="bub">${"ABCD"[k]}</span><span></span>`;b.lastChild.textContent=o;
+    b.onclick=()=>{S.ans[S.i]=k;renderQ()};return b;
+  }));
+  txt("prev",t.prev);$("prev").disabled=S.i===0;
+  txt("next",S.i===S.ts.qs.length-1?t.submit:t.next);
+  txt("flag",S.flag[S.i]?t.unflag:t.flag);txt("clear",t.clear);$("clear").disabled=S.ans[S.i]==null;
+  txt("submit",t.submit);
+  $("palette").replaceChildren(...S.ts.qs.map((_,k)=>{
+    const b=document.createElement("button");b.className="pal"+(S.flag[k]?" flag":S.ans[k]!=null?" ans":"")+(k===S.i?" cur":"");
+    b.textContent=k+1;b.setAttribute("aria-label",`${k+1}`);b.onclick=()=>{S.i=k;renderQ()};return b;
+  }));
+  $("legend").innerHTML=`<span><i class="dot" style="background:var(--ok-soft);border-color:var(--ok)"></i>${t.lg[0]}</span><span><i class="dot" style="background:var(--flag-soft);border-color:var(--flag)"></i>${t.lg[1]}</span><span><i class="dot"></i>${t.lg[2]}</span>`;
+  $("confirm").hidden=true;
+}
+$("prev").onclick=()=>{if(S.i>0){S.i--;renderQ()}};
+$("next").onclick=()=>{if(S.i<S.ts.qs.length-1){S.i++;renderQ()}else askSubmit()};
+$("flag").onclick=()=>{S.flag[S.i]=!S.flag[S.i];renderQ()};
+$("clear").onclick=()=>{S.ans[S.i]=null;renderQ()};
+$("submit").onclick=askSubmit;
+function askSubmit(){const t=T[L];txt("confirm-text",t.confirm(S.ans.filter(a=>a!=null).length,S.ts.qs.length));txt("confirm-yes",t.yes);txt("confirm-no",t.no);$("confirm").hidden=false;$("confirm").scrollIntoView({block:"center"})}
+$("confirm-yes").onclick=finish;$("confirm-no").onclick=()=>$("confirm").hidden=true;
+
+function grade(ts,ans){let c=0,w=0;ts.qs.forEach((q,k)=>{if(ans[k]==null)return;ans[k]===q.a?c++:w++});return{c,w,s:ts.qs.length-c-w,score:+(c*MARK-w*MARK/3).toFixed(2)}}
+
+async function finish(){
+  if(!S||S.done)return;clearInterval(tick);S.done=true;
+  S.used=Math.min(S.ts.min*60,Math.round((Date.now()-S.startAt)/1000));
+  S.g=grade(S.ts,S.ans);
+  const prev=local[S.ts.id];
+  if(!prev||S.g.score>prev.score||(S.g.score===prev.score&&S.used<prev.time)){local[S.ts.id]={score:S.g.score,time:S.used};store.set("best",local)}
+  show("result");renderResult();subscribeBoard(S.ts.id);
+  saveRemote(S.ts.id,local[S.ts.id]);
+}
+
+function renderResult(){
+  const t=T[L],g=S.g,max=S.ts.qs.length*MARK;
+  txt("r-name",`${S.ts.title[L]} · ${store.get("name","")}`);
+  txt("r-score",g.score.toFixed(2));txt("r-out",t.outof(max));
+  const att=g.c+g.w;
+  $("r-stats").innerHTML=`<div class="stat ok"><span class="label">${t.correct}</span><b>${g.c}</b></div><div class="stat bad"><span class="label">${t.wrong}</span><b>${g.w}</b></div><div class="stat"><span class="label">${t.acc}</span><b>${att?Math.round(g.c/att*100):0}%</b></div><div class="stat"><span class="label">${t.time}</span><b>${fmt(S.used)}</b></div>`;
+  txt("lb-h",t.lb);txt("sol-h",t.sol);txt("home",t.home);txt("retry",t.retry);
+  $("sols").replaceChildren(...S.ts.qs.map((q,k)=>{
+    const d=document.createElement("div");d.className="sol";const a=S.ans[k];
+    const st=a==null?"skip":a===q.a?"ok":"bad";
+    d.innerHTML=`<div class="row" style="justify-content:space-between"><b class="qq"></b><span class="tag ${st}">${t["tag"+st]}</span></div>`;
+    d.querySelector(".qq").textContent=`${k+1}. ${q[L]}`;
+    q.o[L].forEach((o,j)=>{if(j!==q.a&&j!==a)return;const p=document.createElement("div");p.className="sopt "+(j===q.a?"right":"wrong");p.textContent=`${"ABCD"[j]}. ${o} — ${j===q.a?t.ans:t.your}`;d.append(p)});
+    const w=document.createElement("p");w.className="why";w.textContent=q.x[L];d.append(w);return d;
+  }));
+  renderBoard();
+}
+$("home").onclick=()=>{S=null;show("home");renderHome()};
+$("retry").onclick=()=>start(S.ts);
+
+/* ---------- shared rank list ---------- */
+async function initRemote(){
+  if(!window.claude?.use)return;
+  try{
+    const [d,u]=await Promise.all([claude.use("db"),claude.use("user")]);
+    if(d&&u){db=d;uid=await u.id()}
+  }catch(e){db=null}
+  if(S&&S.done){subscribeBoard(S.ts.id);saveRemote(S.ts.id,local[S.ts.id])}
+}
+let boardFor=null;
+function subscribeBoard(tid){
+  if(!db||!uid){boardState="off";renderBoard();return}
+  if(boardFor===tid&&unsub)return;
+  if(unsub)unsub();boardFor=tid;boardState="load";renderBoard();
+  clearTimeout(slowTimer);slowTimer=setTimeout(()=>{if(boardState==="load"){boardState="slow";renderBoard()}},10000);
+  unsub=db.collection("scores").onSnapshot(snap=>{
+    if(!snap.metadata.fromCache){clearTimeout(slowTimer)}
+    board=snap.docs.map(s=>({id:s.id,...s.data()})).filter(r=>r.tests&&r.tests[tid]).map(r=>({id:r.id,name:String(r.name||"").slice(0,30),score:+r.tests[tid].score||0,time:+r.tests[tid].time||0}));
+    board.sort((a,b)=>b.score-a.score||a.time-b.time);
+    boardState="ok";renderBoard();
+  },()=>{clearTimeout(slowTimer);boardState="slow";renderBoard()});
+}
+let saving=Promise.resolve();
+function saveRemote(tid,best){
+  if(!db||!uid||!best)return;
+  saving=saving.then(async()=>{
+    const ref=db.doc("scores/"+uid);
+    const snap=await ref.get();
+    const cur=snap.exists?snap.data():{};
+    const tests={...(cur.tests||{})};
+    const old=tests[tid];
+    if(old&&(old.score>best.score||(old.score===best.score&&old.time<=best.time))&&cur.name===store.get("name",""))return;
+    if(!old||best.score>old.score||(best.score===old.score&&best.time<old.time))tests[tid]={score:best.score,time:best.time};
+    await ref.set({name:store.get("name",""),tests});
+  }).catch(()=>{});
+}
+function renderBoard(){
+  if(!S||!S.done)return;
+  const t=T[L],note=$("lb-note"),tb=$("lb");
+  const head=`<thead><tr><th>${t.rank}</th><th>${t.nm}</th><th>${t.sc}</th><th>${t.tm}</th></tr></thead>`;
+  let rows=board;
+  if(boardState!=="ok"||!rows.length){
+    note.textContent=boardState==="off"?t.lboff:boardState==="slow"?t.lbslow:boardState==="load"?t.lbload:t.lbempty;
+    const b=local[S.ts.id];
+    tb.innerHTML=head+`<tbody><tr class="me"><td class="n">—</td><td></td><td class="n">${b.score.toFixed(2)}</td><td class="n">${fmt(b.time)}</td></tr></tbody>`;
+    tb.querySelector("tbody td:nth-child(2)").textContent=`${store.get("name","")} (${t.lbme})`;return;
+  }
+  note.textContent=`${rows.length} ${L==="hi"?"छात्र":"students"}`;
+  const body=document.createElement("tbody");
+  const mi=rows.findIndex(r=>r.id===uid);
+  const shown=rows.slice(0,20);if(mi>=20)shown.push(rows[mi]);
+  shown.forEach(r=>{const tr=document.createElement("tr");if(r.id===uid)tr.className="me";const rk=rows.indexOf(r)+1;
+    tr.innerHTML=`<td class="n">${rk}</td><td></td><td class="n">${r.score.toFixed(2)}</td><td class="n">${fmt(r.time)}</td>`;
+    tr.children[1].textContent=(r.name||t.student)+(r.id===uid?` (${t.lbme})`:"");body.append(tr)});
+  tb.innerHTML=head;tb.append(body);
+}
+
+$("lang-hi").onclick=()=>setLang("hi");$("lang-en").onclick=()=>setLang("en");
+$("name").value=store.get("name","");
+setLang(L);initRemote();
+</script>
+
+</body></html>

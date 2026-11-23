@@ -1,0 +1,482 @@
+[
+ {
+  "id": "lakshya_pcs-0001",
+  "q": "उत्तर प्रदेश का राजकीय पक्षी कौन-सा है?",
+  "options": [
+   "मोर",
+   "सारस",
+   "कोयल",
+   "हरियल"
+  ],
+  "answer": 1,
+  "explanation": "सारस (Sarus Crane) उत्तर प्रदेश का राजकीय पक्षी है।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "What is the state bird of Uttar Pradesh?",
+  "options_en": [
+   "Peacock",
+   "Sarus crane",
+   "Koel",
+   "Green pigeon"
+  ],
+  "explanation_en": "The Sarus crane is UP's state bird."
+ },
+ {
+  "id": "lakshya_pcs-0002",
+  "q": "उत्तर प्रदेश का राजकीय पशु कौन-सा है?",
+  "options": [
+   "बाघ",
+   "हाथी",
+   "बारहसिंगा",
+   "नीलगाय"
+  ],
+  "answer": 2,
+  "explanation": "बारहसिंगा (Swamp Deer) राज्य का राजकीय पशु है।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "What is the state animal of Uttar Pradesh?",
+  "options_en": [
+   "Tiger",
+   "Elephant",
+   "Swamp deer (Barasingha)",
+   "Nilgai"
+  ],
+  "explanation_en": "The Barasingha (swamp deer) is the state animal."
+ },
+ {
+  "id": "lakshya_pcs-0003",
+  "q": "जनगणना 2011 के अनुसार उत्तर प्रदेश का सर्वाधिक जनसंख्या वाला जिला कौन-सा है?",
+  "options": [
+   "लखनऊ",
+   "कानपुर नगर",
+   "गाज़ियाबाद",
+   "प्रयागराज"
+  ],
+  "answer": 3,
+  "explanation": "प्रयागराज (तत्कालीन इलाहाबाद) की जनसंख्या लगभग 59.5 लाख थी।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "As per Census 2011, which is the most populous district of UP?",
+  "options_en": [
+   "Lucknow",
+   "Kanpur Nagar",
+   "Ghaziabad",
+   "Prayagraj"
+  ],
+  "explanation_en": "Prayagraj (then Allahabad) had about 5.95 million people."
+ },
+ {
+  "id": "lakshya_pcs-0004",
+  "q": "दुधवा राष्ट्रीय उद्यान किस जिले में स्थित है?",
+  "options": [
+   "बहराइच",
+   "लखीमपुर खीरी",
+   "पीलीभीत",
+   "सोनभद्र"
+  ],
+  "answer": 1,
+  "explanation": "दुधवा लखीमपुर खीरी जिले में भारत-नेपाल सीमा के पास है।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "Dudhwa National Park is located in which district?",
+  "options_en": [
+   "Bahraich",
+   "Lakhimpur Kheri",
+   "Pilibhit",
+   "Sonbhadra"
+  ],
+  "explanation_en": "Dudhwa lies in Lakhimpur Kheri near the Nepal border."
+ },
+ {
+  "id": "lakshya_pcs-0005",
+  "q": "उत्तर प्रदेश स्थापना दिवस किस तिथि को मनाया जाता है?",
+  "options": [
+   "24 जनवरी",
+   "1 नवंबर",
+   "26 जनवरी",
+   "15 अगस्त"
+  ],
+  "answer": 0,
+  "explanation": "24 जनवरी 1950 को 'संयुक्त प्रांत' का नाम 'उत्तर प्रदेश' हुआ।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "On which date is Uttar Pradesh Diwas (foundation day) observed?",
+  "options_en": [
+   "24 January",
+   "1 November",
+   "26 January",
+   "15 August"
+  ],
+  "explanation_en": "On 24 Jan 1950 the United Provinces was renamed Uttar Pradesh."
+ },
+ {
+  "id": "lakshya_pcs-0006",
+  "q": "उत्तर प्रदेश विधान परिषद में कुल कितने सदस्य हैं?",
+  "options": [
+   "80",
+   "100",
+   "108",
+   "403"
+  ],
+  "answer": 1,
+  "explanation": "विधान परिषद में 100 सदस्य हैं; विधानसभा में 403।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "How many members does the UP Legislative Council have?",
+  "options_en": [
+   "80",
+   "100",
+   "108",
+   "403"
+  ],
+  "explanation_en": "The Council has 100 members; the Assembly has 403."
+ },
+ {
+  "id": "lakshya_pcs-0007",
+  "q": "रिहंद बांध (गोविंद बल्लभ पंत सागर) किस नदी पर बना है?",
+  "options": [
+   "बेतवा",
+   "केन",
+   "रिहंद",
+   "सोन"
+  ],
+  "answer": 2,
+  "explanation": "सोनभद्र जिले में रिहंद नदी पर; इसका जलाशय गोविंद बल्लभ पंत सागर है।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "The Rihand Dam (Govind Ballabh Pant Sagar) is built on which river?",
+  "options_en": [
+   "Betwa",
+   "Ken",
+   "Rihand",
+   "Son"
+  ],
+  "explanation_en": "On the Rihand river in Sonbhadra; its reservoir is GB Pant Sagar."
+ },
+ {
+  "id": "lakshya_pcs-0008",
+  "q": "चौरी-चौरा कांड किस वर्ष हुआ था?",
+  "options": [
+   "1919",
+   "1920",
+   "1922",
+   "1925"
+  ],
+  "answer": 2,
+  "explanation": "4 फरवरी 1922, गोरखपुर; इसके बाद गांधीजी ने असहयोग आंदोलन वापस लिया।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "In which year did the Chauri Chaura incident occur?",
+  "options_en": [
+   "1919",
+   "1920",
+   "1922",
+   "1925"
+  ],
+  "explanation_en": "4 Feb 1922 in Gorakhpur; Gandhi then withdrew the Non-Cooperation Movement."
+ },
+ {
+  "id": "lakshya_pcs-0009",
+  "q": "काकोरी ट्रेन एक्शन किस वर्ष हुआ था?",
+  "options": [
+   "1922",
+   "1925",
+   "1928",
+   "1931"
+  ],
+  "answer": 1,
+  "explanation": "9 अगस्त 1925 को HRA के क्रांतिकारियों ने लखनऊ के पास काकोरी में यह कार्रवाई की।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "In which year did the Kakori train action take place?",
+  "options_en": [
+   "1922",
+   "1925",
+   "1928",
+   "1931"
+  ],
+  "explanation_en": "On 9 Aug 1925, HRA revolutionaries acted at Kakori near Lucknow."
+ },
+ {
+  "id": "lakshya_pcs-0010",
+  "q": "उत्तर प्रदेश से लोकसभा की कितनी सीटें हैं?",
+  "options": [
+   "31",
+   "48",
+   "80",
+   "85"
+  ],
+  "answer": 2,
+  "explanation": "उत्तर प्रदेश से लोकसभा की 80 और राज्यसभा की 31 सीटें हैं।",
+  "topic": "उत्तर प्रदेश सामान्य ज्ञान — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 1,
+  "q_en": "How many Lok Sabha seats does Uttar Pradesh have?",
+  "options_en": [
+   "31",
+   "48",
+   "80",
+   "85"
+  ],
+  "explanation_en": "UP has 80 Lok Sabha and 31 Rajya Sabha seats."
+ },
+ {
+  "id": "lakshya_pcs-0011",
+  "q": "भारतीय संविधान का कौन-सा अनुच्छेद अस्पृश्यता का अंत करता है?",
+  "options": [
+   "अनुच्छेद 14",
+   "अनुच्छेद 15",
+   "अनुच्छेद 17",
+   "अनुच्छेद 21"
+  ],
+  "answer": 2,
+  "explanation": "अनुच्छेद 17 अस्पृश्यता का अंत करता है और इसका आचरण निषिद्ध करता है।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "Which Article of the Constitution abolishes untouchability?",
+  "options_en": [
+   "Article 14",
+   "Article 15",
+   "Article 17",
+   "Article 21"
+  ],
+  "explanation_en": "Article 17 abolishes untouchability and forbids its practice."
+ },
+ {
+  "id": "lakshya_pcs-0012",
+  "q": "राज्य के राज्यपाल की नियुक्ति कौन करता है?",
+  "options": [
+   "मुख्यमंत्री",
+   "प्रधानमंत्री",
+   "राष्ट्रपति",
+   "मुख्य न्यायाधीश"
+  ],
+  "answer": 2,
+  "explanation": "अनुच्छेद 155 के तहत राष्ट्रपति राज्यपाल की नियुक्ति करते हैं।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "Who appoints the Governor of a state?",
+  "options_en": [
+   "Chief Minister",
+   "Prime Minister",
+   "President",
+   "Chief Justice"
+  ],
+  "explanation_en": "Under Article 155, the President appoints the Governor."
+ },
+ {
+  "id": "lakshya_pcs-0013",
+  "q": "प्रथम बौद्ध संगीति कहाँ आयोजित हुई थी?",
+  "options": [
+   "वैशाली",
+   "राजगृह",
+   "पाटलिपुत्र",
+   "कश्मीर"
+  ],
+  "answer": 1,
+  "explanation": "बुद्ध के निर्वाण के बाद अजातशत्रु के काल में राजगृह में।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "Where was the First Buddhist Council held?",
+  "options_en": [
+   "Vaishali",
+   "Rajagriha",
+   "Pataliputra",
+   "Kashmir"
+  ],
+  "explanation_en": "At Rajagriha, under Ajatashatru, soon after the Buddha's death."
+ },
+ {
+  "id": "lakshya_pcs-0014",
+  "q": "कर्क रेखा भारत के कितने राज्यों से होकर गुजरती है?",
+  "options": [
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "answer": 2,
+  "explanation": "गुजरात, राजस्थान, मध्य प्रदेश, छत्तीसगढ़, झारखंड, पश्चिम बंगाल, त्रिपुरा, मिज़ोरम।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "The Tropic of Cancer passes through how many Indian states?",
+  "options_en": [
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "explanation_en": "Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram."
+ },
+ {
+  "id": "lakshya_pcs-0015",
+  "q": "'वेदों की ओर लौटो' का नारा किसने दिया?",
+  "options": [
+   "राजा राममोहन राय",
+   "स्वामी विवेकानंद",
+   "स्वामी दयानंद सरस्वती",
+   "ईश्वरचंद्र विद्यासागर"
+  ],
+  "answer": 2,
+  "explanation": "आर्य समाज (1875) के संस्थापक स्वामी दयानंद सरस्वती ने।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "Who gave the slogan 'Go back to the Vedas'?",
+  "options_en": [
+   "Raja Ram Mohan Roy",
+   "Swami Vivekananda",
+   "Swami Dayanand Saraswati",
+   "Ishwar Chandra Vidyasagar"
+  ],
+  "explanation_en": "Swami Dayanand Saraswati, founder of the Arya Samaj (1875)."
+ },
+ {
+  "id": "lakshya_pcs-0016",
+  "q": "मौलिक कर्तव्य किस संविधान संशोधन द्वारा जोड़े गए?",
+  "options": [
+   "42वाँ",
+   "44वाँ",
+   "52वाँ",
+   "73वाँ"
+  ],
+  "answer": 0,
+  "explanation": "42वें संशोधन (1976) से भाग IV-A, अनुच्छेद 51A जोड़ा गया।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "Fundamental Duties were added by which amendment?",
+  "options_en": [
+   "42nd",
+   "44th",
+   "52nd",
+   "73rd"
+  ],
+  "explanation_en": "The 42nd Amendment (1976) added Part IV-A, Article 51A."
+ },
+ {
+  "id": "lakshya_pcs-0017",
+  "q": "भारतीय रिज़र्व बैंक की स्थापना किस वर्ष हुई?",
+  "options": [
+   "1921",
+   "1935",
+   "1947",
+   "1949"
+  ],
+  "answer": 1,
+  "explanation": "1 अप्रैल 1935; 1949 में इसका राष्ट्रीयकरण हुआ।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "In which year was the Reserve Bank of India established?",
+  "options_en": [
+   "1921",
+   "1935",
+   "1947",
+   "1949"
+  ],
+  "explanation_en": "1 April 1935; it was nationalised in 1949."
+ },
+ {
+  "id": "lakshya_pcs-0018",
+  "q": "विटामिन C की कमी से कौन-सा रोग होता है?",
+  "options": [
+   "रिकेट्स",
+   "स्कर्वी",
+   "बेरी-बेरी",
+   "रतौंधी"
+  ],
+  "answer": 1,
+  "explanation": "स्कर्वी — मसूड़ों से खून आना इसका प्रमुख लक्षण है।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "Deficiency of Vitamin C causes which disease?",
+  "options_en": [
+   "Rickets",
+   "Scurvy",
+   "Beriberi",
+   "Night blindness"
+  ],
+  "explanation_en": "Scurvy — bleeding gums is a key symptom."
+ },
+ {
+  "id": "lakshya_pcs-0019",
+  "q": "पंचायती राज को संवैधानिक दर्जा किस संशोधन से मिला?",
+  "options": [
+   "61वाँ",
+   "73वाँ",
+   "74वाँ",
+   "86वाँ"
+  ],
+  "answer": 1,
+  "explanation": "73वाँ संशोधन (1992), भाग IX; 74वाँ नगरपालिकाओं के लिए है।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "Which amendment gave constitutional status to Panchayati Raj?",
+  "options_en": [
+   "61st",
+   "73rd",
+   "74th",
+   "86th"
+  ],
+  "explanation_en": "73rd Amendment (1992), Part IX; the 74th covers municipalities."
+ },
+ {
+  "id": "lakshya_pcs-0020",
+  "q": "भारत के भीतर सबसे लंबी नदी कौन-सी है?",
+  "options": [
+   "गोदावरी",
+   "ब्रह्मपुत्र",
+   "सिंधु",
+   "गंगा"
+  ],
+  "answer": 3,
+  "explanation": "गंगा; प्रायद्वीपीय भारत में सबसे लंबी गोदावरी है।",
+  "topic": "सामान्य अध्ययन — मॉक 1",
+  "source": "",
+  "lang": "hi+en",
+  "test_no": 2,
+  "q_en": "Which is the longest river within India?",
+  "options_en": [
+   "Godavari",
+   "Brahmaputra",
+   "Indus",
+   "Ganga"
+  ],
+  "explanation_en": "The Ganga; the Godavari is the longest in peninsular India."
+ }
+]

@@ -1,0 +1,497 @@
+{
+ "notes": [
+  {
+   "id": "ancient-history-full",
+   "title": "प्राचीन भारत का इतिहास – संपूर्ण नोट्स",
+   "subject": "history",
+   "parts": [
+    {
+     "tab": "प्राचीन भारत का इतिहास – संपूर्ण नोट्स",
+     "pdf": "data/notes/pdf/ancient-history-full.pdf",
+     "txt": "data/notes/txt/ancient-history-full.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "2252e6da"
+  },
+  {
+   "id": "medieval-history-pagewise",
+   "title": "मध्यकालीन भारत का इतिहास – पेज-वार नोट्स",
+   "subject": "history",
+   "parts": [
+    {
+     "tab": "मध्यकालीन भारत का इतिहास – पेज-वार नोट्स",
+     "pdf": "data/notes/pdf/medieval-history-pagewise.pdf",
+     "txt": "data/notes/txt/medieval-history-pagewise.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "32380577"
+  },
+  {
+   "id": "medieval-short",
+   "title": "मध्यकालीन भारत – शॉर्ट नोट्स (UPPCS)",
+   "subject": "history",
+   "parts": [
+    {
+     "tab": "मध्यकालीन भारत – शॉर्ट नोट्स (UPPCS)",
+     "pdf": "data/notes/pdf/medieval-short.pdf",
+     "txt": "data/notes/txt/medieval-short.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "fac08f84"
+  },
+  {
+   "id": "modern-history-pagewise",
+   "title": "आधुनिक भारत का इतिहास – पेज-वार नोट्स",
+   "subject": "history",
+   "parts": [
+    {
+     "tab": "आधुनिक भारत का इतिहास – पेज-वार नोट्स",
+     "pdf": "data/notes/pdf/modern-history-pagewise.pdf",
+     "txt": "data/notes/txt/modern-history-pagewise.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "ec83b7be"
+  },
+  {
+   "id": "india-geo-short",
+   "title": "भारत का भूगोल – संक्षिप्त नोट्स (UPPCS 2026)",
+   "subject": "geography",
+   "parts": [
+    {
+     "tab": "भारत का भूगोल – संक्षिप्त नोट्स (UPPCS 2026)",
+     "pdf": "data/notes/pdf/india-geo-short.pdf",
+     "txt": "data/notes/txt/india-geo-short.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "32ea6099"
+  },
+  {
+   "id": "india-geo-concept",
+   "title": "भारत का भूगोल — UPPSC 2026 कॉन्सेप्ट नोट्स",
+   "subject": "geography",
+   "parts": [
+    {
+     "tab": "भारत का भूगोल — UPPSC 2026 कॉन्सेप्ट नोट्स",
+     "pdf": "data/notes/pdf/india-geo-concept.pdf",
+     "txt": "data/notes/txt/india-geo-concept.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "fb318f72"
+  },
+  {
+   "id": "world-geo-pagewise",
+   "title": "विश्व का भूगोल – पेज-वार नोट्स",
+   "subject": "geography",
+   "parts": [
+    {
+     "tab": "विश्व का भूगोल – पेज-वार नोट्स",
+     "pdf": "data/notes/pdf/world-geo-pagewise.pdf",
+     "txt": "data/notes/txt/world-geo-pagewise.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "b27be47d"
+  },
+  {
+   "id": "polity-short",
+   "title": "भारतीय राजव्यवस्था – शॉर्ट नोट्स",
+   "subject": "polity",
+   "parts": [
+    {
+     "tab": "भारतीय राजव्यवस्था – शॉर्ट नोट्स",
+     "pdf": "data/notes/pdf/polity-short.pdf",
+     "txt": "data/notes/txt/polity-short.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "ff106bd4"
+  },
+  {
+   "id": "economics-pagewise",
+   "title": "अर्थशास्त्र – पेज-वार नोट्स (UPPCS)",
+   "subject": "economy",
+   "parts": [
+    {
+     "tab": "अर्थशास्त्र – पेज-वार नोट्स (UPPCS)",
+     "pdf": "data/notes/pdf/economics-pagewise.pdf",
+     "txt": "data/notes/txt/economics-pagewise.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "ce391051"
+  },
+  {
+   "id": "arthiki-2026-short",
+   "title": "आर्थिकी 2026 – शॉर्ट नोट्स",
+   "subject": "economy",
+   "parts": [
+    {
+     "tab": "आर्थिकी 2026 – शॉर्ट नोट्स",
+     "pdf": "data/notes/pdf/arthiki-2026-short.pdf",
+     "txt": "data/notes/txt/arthiki-2026-short.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "c5356fd2"
+  },
+  {
+   "id": "arthiki-2026-notes",
+   "title": "आर्थिकी 2026 – UPPSC नोट्स",
+   "subject": "economy",
+   "parts": [
+    {
+     "tab": "आर्थिकी 2026 – UPPSC नोट्स",
+     "pdf": "data/notes/pdf/arthiki-2026-notes.pdf",
+     "txt": "data/notes/txt/arthiki-2026-notes.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "6297d950"
+  },
+  {
+   "id": "phy-chem-short",
+   "title": "भौतिकी एवं रसायन विज्ञान — संक्षिप्त नोट्स",
+   "subject": "science",
+   "parts": [
+    {
+     "tab": "भौतिकी एवं रसायन विज्ञान — संक्षिप्त नोट्स",
+     "pdf": "data/notes/pdf/phy-chem-short.pdf",
+     "txt": "data/notes/txt/phy-chem-short.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "a6391c86"
+  },
+  {
+   "id": "biology-short",
+   "title": "जीव विज्ञान – पेज-वार शॉर्ट नोट्स (UPPCS)",
+   "subject": "science",
+   "parts": [
+    {
+     "tab": "जीव विज्ञान – पेज-वार शॉर्ट नोट्स (UPPCS)",
+     "pdf": "data/notes/pdf/biology-short.pdf",
+     "txt": "data/notes/txt/biology-short.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "e30531c0"
+  },
+  {
+   "id": "gs-part7-a",
+   "title": "सामान्य विज्ञान भाग-7 — UPPSC 2026 क्रमबद्ध नोट्स",
+   "subject": "science",
+   "parts": [
+    {
+     "tab": "सामान्य विज्ञान भाग-7 — UPPSC 2026 क्रमबद्ध नोट्स",
+     "pdf": "data/notes/pdf/gs-part7-a.pdf",
+     "txt": "data/notes/txt/gs-part7-a.txt"
+    }
+   ],
+   "flag": "duplicate pair A (copy 1)",
+   "source_slug_prefix": "22691a6f"
+  },
+  {
+   "id": "gs-part7-b",
+   "title": "सामान्य विज्ञान (भाग 7) — UPPSC 2026 क्रमबद्ध नोट्स",
+   "subject": "science",
+   "parts": [
+    {
+     "tab": "सामान्य विज्ञान (भाग 7) — UPPSC 2026 क्रमबद्ध नोट्स",
+     "pdf": "data/notes/pdf/gs-part7-b.pdf",
+     "txt": "data/notes/txt/gs-part7-b.txt"
+    }
+   ],
+   "flag": "duplicate pair A (copy 2)",
+   "source_slug_prefix": "90f03b52"
+  },
+  {
+   "id": "env-short",
+   "title": "पर्यावरण एवं पारिस्थितिकी — शॉर्ट नोट्स (UPPCS)",
+   "subject": "environment",
+   "parts": [
+    {
+     "tab": "पर्यावरण एवं पारिस्थितिकी — शॉर्ट नोट्स (UPPCS)",
+     "pdf": "data/notes/pdf/env-short.pdf",
+     "txt": "data/notes/txt/env-short.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "5ba2f360"
+  },
+  {
+   "id": "env-sustainable",
+   "title": "पर्यावरण एवं सतत विकास – UPPSC 2026 नोट्स",
+   "subject": "environment",
+   "parts": [
+    {
+     "tab": "पर्यावरण एवं सतत विकास – UPPSC 2026 नोट्स",
+     "pdf": "data/notes/pdf/env-sustainable.pdf",
+     "txt": "data/notes/txt/env-sustainable.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "3c2609b2"
+  },
+  {
+   "id": "ramsar-sites",
+   "title": "भारत में रामसर स्थल – हिंदी नोट्स",
+   "subject": "environment",
+   "parts": [
+    {
+     "tab": "भारत में रामसर स्थल – हिंदी नोट्स",
+     "pdf": "data/notes/pdf/ramsar-sites.pdf",
+     "txt": "data/notes/txt/ramsar-sites.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "f223817e"
+  },
+  {
+   "id": "up-special",
+   "title": "उत्तर प्रदेश स्पेशल – शॉर्ट नोट्स 2026 (UPPCS)",
+   "subject": "up-gk",
+   "parts": [
+    {
+     "tab": "उत्तर प्रदेश स्पेशल – शॉर्ट नोट्स 2026 (UPPCS)",
+     "pdf": "data/notes/pdf/up-special.pdf",
+     "txt": "data/notes/txt/up-special.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "6e51dc96"
+  },
+  {
+   "id": "quant-formulas",
+   "title": "Quantitative Aptitude Formula Sheet (UPPSC / UPSSSC)",
+   "subject": "quant",
+   "parts": [
+    {
+     "tab": "Quantitative Aptitude Formula Sheet (UPPSC UPSSSC)",
+     "pdf": "data/notes/pdf/quant-formulas.pdf",
+     "txt": "data/notes/txt/quant-formulas.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "7e1e3bbe"
+  },
+  {
+   "id": "ca-2026-07",
+   "title": "करंट अफेयर्स जुलाई 2026 – शॉर्ट नोट्स",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "करंट अफेयर्स जुलाई 2026 – शॉर्ट नोट्स",
+     "pdf": "data/notes/pdf/ca-2026-07.pdf",
+     "txt": "data/notes/txt/ca-2026-07.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "d0265ff5"
+  },
+  {
+   "id": "ca-2026-08",
+   "title": "करेंट अफेयर्स शॉर्ट नोट्स – अगस्त 2026",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "करेंट अफेयर्स शॉर्ट नोट्स – अगस्त 2026",
+     "pdf": "data/notes/pdf/ca-2026-08.pdf",
+     "txt": "data/notes/txt/ca-2026-08.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "d4f03c49"
+  },
+  {
+   "id": "ca-2026-09",
+   "title": "करेंट अफेयर्स शॉर्ट नोट्स – सितंबर 2026",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "करेंट अफेयर्स शॉर्ट नोट्स – सितंबर 2026",
+     "pdf": "data/notes/pdf/ca-2026-09.pdf",
+     "txt": "data/notes/txt/ca-2026-09.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "81e5d49b"
+  },
+  {
+   "id": "ca-2026-10-short",
+   "title": "शॉर्ट नोट्स — अक्टूबर 2026 समसामयिकी",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "शॉर्ट नोट्स — अक्टूबर 2026 समसामयिकी",
+     "pdf": "data/notes/pdf/ca-2026-10-short.pdf",
+     "txt": "data/notes/txt/ca-2026-10-short.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "2012484d"
+  },
+  {
+   "id": "ca-2026-10-sections",
+   "title": "समसामयिकी नोट्स — अक्टूबर 2026 (सेक्शन-वार)",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "समसामयिकी नोट्स — अक्टूबर 2026 (सेक्शन-वार)",
+     "pdf": "data/notes/pdf/ca-2026-10-sections.pdf",
+     "txt": "data/notes/txt/ca-2026-10-sections.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "d76647c7"
+  },
+  {
+   "id": "ramayan-ca-notes",
+   "title": "रामायण करेंट अफेयर्स 2026 — शॉर्ट नोट्स",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "रामायण करेंट अफेयर्स 2026 — शॉर्ट नोट्स",
+     "pdf": "data/notes/pdf/ramayan-ca-notes-tab1.pdf",
+     "txt": "data/notes/txt/ramayan-ca-notes-tab1.txt"
+    },
+    {
+     "tab": "सूचकांक 2026",
+     "pdf": "data/notes/pdf/ramayan-ca-notes-tab2.pdf",
+     "txt": "data/notes/txt/ramayan-ca-notes-tab2.txt"
+    }
+   ],
+   "flag": "2 tabs",
+   "source_slug_prefix": "b2c10e9f"
+  },
+  {
+   "id": "drishti-ca-notes",
+   "title": "UPPSC 2026 करेंट अफेयर्स नोट्स (दृष्टि)",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "UPPSC 2026 करेंट अफेयर्स नोट्स (दृष्टि)",
+     "pdf": "data/notes/pdf/drishti-ca-notes.pdf",
+     "txt": "data/notes/txt/drishti-ca-notes.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "57a2f36b"
+  },
+  {
+   "id": "ghatnasar-ca-notes",
+   "title": "UPPSC 2026 करेंट अफेयर्स नोट्स (घटनासार 2026)",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "UPPSC 2026 करेंट अफेयर्स नोट्स (घटनासार 2026)",
+     "pdf": "data/notes/pdf/ghatnasar-ca-notes.pdf",
+     "txt": "data/notes/txt/ghatnasar-ca-notes.txt"
+    }
+   ],
+   "flag": "other copy (7c27318c) is an empty 1-page shell",
+   "source_slug_prefix": "99402957"
+  },
+  {
+   "id": "drishti-vs-ghatnasar",
+   "title": "दृष्टि 2026(2) बनाम घटनासार 2026 — केवल एक पत्रिका में छपी खबरें",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "दृष्टि 2026(2) बनाम घटनासार 2026 — केवल एक पत्रिका में छपी खबरें",
+     "pdf": "data/notes/pdf/drishti-vs-ghatnasar.pdf",
+     "txt": "data/notes/txt/drishti-vs-ghatnasar.txt"
+    }
+   ],
+   "flag": "",
+   "source_slug_prefix": "bc7c2286"
+  },
+  {
+   "id": "indices-2026",
+   "title": "सूचकांक 2026 – भारत की रैंक",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "सूचकांक 2026 – भारत की रैंक",
+     "pdf": "data/notes/pdf/indices-2026.pdf",
+     "txt": "data/notes/txt/indices-2026.txt"
+    }
+   ],
+   "flag": "related: combined list",
+   "source_slug_prefix": "236e5de3"
+  },
+  {
+   "id": "indices-2026-combined",
+   "title": "सूचकांक 2026 — भारत की रैंकिंग (संयुक्त सूची)",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "सूचकांक 2026 — भारत की रैंकिंग (संयुक्त सूची)",
+     "pdf": "data/notes/pdf/indices-2026-combined.pdf",
+     "txt": "data/notes/txt/indices-2026-combined.txt"
+    }
+   ],
+   "flag": "related: indices list",
+   "source_slug_prefix": "f711c76b"
+  },
+  {
+   "id": "ca-mcq-doc",
+   "title": "UPPSC 2026 करेंट अफेयर्स MCQ (प्रश्नोत्तर)",
+   "subject": "current-affairs",
+   "parts": [
+    {
+     "tab": "UPPSC 2026 करेंट अफेयर्स MCQ (प्रश्नोत्तर)",
+     "pdf": "data/notes/pdf/ca-mcq-doc.pdf",
+     "txt": "data/notes/txt/ca-mcq-doc.txt"
+    }
+   ],
+   "flag": "all 100 MCQs already in uppsc_ca_test",
+   "source_slug_prefix": "f7a5343e"
+  },
+  {
+   "id": "env-handwritten",
+   "title": "पर्यावरण हस्तलिखित नोट्स",
+   "subject": "environment",
+   "parts": [
+    {
+     "tab": "web page",
+     "html": "data/notes/html/env-handwritten.html"
+    }
+   ],
+   "flag": "original was a web page",
+   "source_slug_prefix": "1882824b"
+  }
+ ],
+ "empty_sources": [
+  {
+   "slug_prefix": "7c27318c",
+   "title": "UPPSC 2026 करेंट अफेयर्स नोट्स (घटनासार 2026)",
+   "status": "source doc is a 1-page title-only shell; nothing to import"
+  },
+  {
+   "slug_prefix": "ad1fa363",
+   "title": "करेंट अर्द्धवार्षिकी 2026 – शॉर्ट नोट्स",
+   "status": "source doc is a 1-page title-only shell; nothing to import"
+  },
+  {
+   "slug_prefix": "27d2b3f8",
+   "title": "करेंट अर्धवार्षिकी 2026 – शॉर्ट नोट्स",
+   "status": "source doc is a 1-page title-only shell; nothing to import"
+  },
+  {
+   "slug_prefix": "56a9f715",
+   "title": "करेंट अर्द्धवार्षिकी 2026 – शॉर्ट नोट्स",
+   "status": "source doc is a 1-page title-only shell; nothing to import"
+  },
+  {
+   "slug_prefix": "b6d0bb66",
+   "title": "करेंट अर्द्धवार्षिकी 2026 – शॉर्ट नोट्स",
+   "status": "source doc is a 1-page title-only shell; nothing to import"
+  }
+ ]
+}

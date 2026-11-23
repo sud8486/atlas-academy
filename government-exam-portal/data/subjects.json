@@ -1,0 +1,126 @@
+[
+ {
+  "id": "current-affairs",
+  "title_hi": "समसामयिकी",
+  "series": [
+   "uppsc_ca_test",
+   "uppsc_ca_series",
+   "upsc_ca",
+   "ramayan_ca",
+   "ca_batch1"
+  ],
+  "notes": [
+   "ca-2026-07",
+   "ca-2026-08",
+   "ca-2026-09",
+   "ca-2026-10-short",
+   "ca-2026-10-sections",
+   "ramayan-ca-notes",
+   "drishti-ca-notes",
+   "ghatnasar-ca-notes",
+   "drishti-vs-ghatnasar",
+   "indices-2026",
+   "indices-2026-combined",
+   "ca-mcq-doc"
+  ]
+ },
+ {
+  "id": "economy",
+  "title_hi": "अर्थव्यवस्था",
+  "series": [
+   "arthiki2026",
+   "samsamayik_arthiki",
+   "uppsc_economy"
+  ],
+  "notes": [
+   "economics-pagewise",
+   "arthiki-2026-short",
+   "arthiki-2026-notes"
+  ]
+ },
+ {
+  "id": "history",
+  "title_hi": "इतिहास",
+  "series": [
+   "ancient_history",
+   "medieval_history",
+   "modern_history"
+  ],
+  "notes": [
+   "ancient-history-full",
+   "medieval-history-pagewise",
+   "medieval-short",
+   "modern-history-pagewise"
+  ]
+ },
+ {
+  "id": "geography",
+  "title_hi": "भूगोल",
+  "series": [
+   "india_geography",
+   "world_geography"
+  ],
+  "notes": [
+   "india-geo-short",
+   "india-geo-concept",
+   "world-geo-pagewise"
+  ]
+ },
+ {
+  "id": "polity",
+  "title_hi": "राजव्यवस्था",
+  "series": [
+   "polity_pyq",
+   "passage_pyq"
+  ],
+  "notes": [
+   "polity-short"
+  ]
+ },
+ {
+  "id": "environment",
+  "title_hi": "पर्यावरण",
+  "series": [
+   "environment"
+  ],
+  "notes": [
+   "env-short",
+   "env-sustainable",
+   "ramsar-sites",
+   "env-handwritten"
+  ]
+ },
+ {
+  "id": "science",
+  "title_hi": "सामान्य विज्ञान",
+  "series": [
+   "general_science",
+   "chemistry",
+   "biology"
+  ],
+  "notes": [
+   "phy-chem-short",
+   "biology-short",
+   "gs-part7-a",
+   "gs-part7-b"
+  ]
+ },
+ {
+  "id": "up-gk",
+  "title_hi": "उत्तर प्रदेश / मिश्रित",
+  "series": [
+   "lakshya_pcs"
+  ],
+  "notes": [
+   "up-special"
+  ]
+ },
+ {
+  "id": "quant",
+  "title_hi": "गणित",
+  "series": [],
+  "notes": [
+   "quant-formulas"
+  ]
+ }
+]
